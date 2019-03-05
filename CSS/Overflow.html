@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <title>CSS</title>
+        <style>
+         .scrolloverflow {
+                         white-space: nowrap;
+                         border: 1px solid #000;
+                         width: 1000px;
+                         height: 100px;
+                         text-overflow: clip;
+                         padding: 10px;
+                         overflow: hidden;
+                         }
+
+         .hiddenoverflow {
+                        white-space: nowrap;
+                         width: 100px;
+                         height: 100px;
+                         border: 1px solid #ccc;
+                         overflow: hidden;
+                         text-overflow: ellipsis;
+                         padding: 10px; 
+                         }
+
+
+
+        </style>
+    </head>  
+    <body>  
+                
+        <center><h1>overflow:Scroll</h1></center>
+        <p class="scrolloverflow">
+            Writers write descriptive paragraphs because their purpose is to describe something. Their point is that something is beautiful or disgusting or strangely intriguing. Writers write persuasive and argument paragraphs because their purpose is to persuade or convince someone. Their point is that their reader should see things a particular way and possibly take action on that new way of seeing things. Writers write paragraphs of comparison because the comparison will make their point clear to their readers.This is the scroll overflow whereas you can scroll the entire text,Just scroll down below to see the entire content.
+        </p>  
+
+        <hr>
+        <center><h1>overflow:Hidden</h1></center>
+        <p class="hiddenoverflow">
+            This is the hiddenoverflow wgere the overflow will be hidden.Just see the entire thing for your conclusion.
+        </p>        
+    </body>  
+</html>  
