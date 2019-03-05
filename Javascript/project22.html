@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Add New</button>
+    <button onclick="arrayref()">Refresh array</button>
+    <div id="result">
+    </div>
+    <script>
+        var myDiv = document.querySelector('#result');
+        var course = new Array('HTML', 'CSS', 'Javascript');
+
+        function arrayref()
+        {
+            var myList = document.createElement('ol');
+            for (var i=0;i<course.length; i++)
+        {
+            var item = document.createElement('li');
+                item.textContent = course[i];
+                myList.appendChild(item);
+        }
+            myDiv.appendChild(myList);
+        }
+
+        function add()
+        {
+            var myList = prompt('Enter a value');
+            course.push(myList);
+            arrayref();
+        }
+
+
+
+    </script>
+</html>

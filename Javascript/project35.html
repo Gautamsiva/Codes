@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>cut copy paste</h1>
+    <h3 oncopy="abc()">Select me and to copy the content.press ctrl+c</h3>
+    <br>
+    <textarea oncut="xyz()" onpaste="pqr()" cols="30" rows="10"></textarea>
+    <hr>
+    <div id="demo"></div>
+    <script>
+    function abc()
+    {
+        document.getElementById('demo').innerHTML = "<h1 style='color:blue'>You have copied the text...paste it </h1>";
+    }
+    function pqr()
+    {
+        document.getElementById('demo').innerHTML = "<h1 style='color:green'>You have successfully pasted the text</h1>";
+    }
+    function xyz()
+    {
+        document.getElementById('demo').innerHTML = "<h1 style='color:red'>You have cut the text...paste it</h1>";
+    }
+    </script>
+    
+</body>
+</html>

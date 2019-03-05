@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOM</title>
+    </head>
+    <body onload="display()">
+       <!-- <script>
+            setInterval(function(){
+                document.write("Be-Practical <br>");
+            }, 2000); 
+        </script> -->
+        <script>
+        function display(){
+            document.write("Be-Practical <br>");
+            setTimeout(function(){
+                display();
+            }, 2000);
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm">
+    <label>username</label>
+    <input type="text" name="user" id="user">
+    <br><br>
+
+    <label>Password</label>
+    <input type="password" name="pass" id="pass">
+    <br><br>
+
+    <input type="button" value="Login" onclick="validate()">
+    </form>
+    <script>
+        function validate()
+        {
+            var u = document.myForm.user.value;
+            var p = document.myForm.pass.value;
+
+            if (u === "admin@gmail.com" && p === "admin123")
+            {
+                alert('Welcome,You are successfully Logged in');
+            }else{
+                alert('Wrong Inputs');
+            }
+        }
+    </script>
+    
+</body>
+</html>

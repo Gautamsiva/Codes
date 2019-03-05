@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        #mydialog{
+            background: #cccc;
+            border: none;
+            border-radius: 5px;
+            padding: 30px;
+            width: 50%;
+            text-align: justify;
+            position: relative;
+            }
+        #button{
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: linear-gradient(rgba(235,106,20,0.4),rgba(240,6,6,0.5)) 
+        }
+        
+
+    </style>
+</head>
+<body onload="display()">
+    <h1>Onload() you need to refresh the page</h1>
+    <h1 id= "txt"></h1> 
+    <dialog id="myDialog">
+        <h1>This is my sample text content</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo consequatur odio illum pariatur officia sint ea! Dolor consequatur eum, aperiam, hic ad illo labore, nesciunt repudiandae eaque animi ullam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam voluptate ad, labore vitae rem nemo iusto iste, expedita praesentium eius error! Reprehenderit sunt consectetur adipisci quasi facere sit magni nesciunt.
+        </p>
+        <button onclick="closeDialog()">Close</button>
+        <script>
+            function display()
+            {
+              document.getElementById('txt').innerText = "Data has started loading....please wait for 4 sec";
+              setTimeout(function(){
+                  // alert("Data Loading succesfully Finished.....");
+              document.getElementById('myDialog').show();
+              },4000);
+            }
+            function closeDialog(){
+                //seTimeout(function(){
+                //document.getElementById('myDialog').close();
+                //},3000);
+                document.getElementById('myDialog').close();
+            }
+        </script>
+
+    </dialog>
+</body>
+</html>
