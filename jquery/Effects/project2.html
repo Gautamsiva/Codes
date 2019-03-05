@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SLide Down</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #panel, #flip{
+            padding: 5px;
+            text-align: center;
+            background-color: Olive;
+            color: aqua;
+            border: 1px solid #c3c2c2;
+            cursor: pointer;
+        }
+
+        #panel{
+            padding: 30px;
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown(4000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Jquery Page - Slide Down</h1>
+    <div id="flip">Click on me Slide toggle panel</div>
+    <div id="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis, quasi rem! Modi atque perferendis deserunt provident 
+        sapiente neque consequatur veniam, sed quaerat nesciunt iste 
+        iure excepturi vero tempora optio nostrum.</p>
+    </div>
+    
+</body>
+</html>
