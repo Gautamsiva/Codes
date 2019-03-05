@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width;initial-scale=1.0" name="viewport">
+    <title></title>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="progress">
+                <progress class="progress-bar-info" style="width: 100%;" id="pro"></progress>
+            </div>
+            <button class="btn btn-danger" onclick="onAutoFill()">Autofill</button>
+            <script>
+                var x = 10;
+
+                function onAutoFill()
+                {
+                    var myPro = document.getElementById('pro');
+                    setTimeout(function(){
+                            if(x < 100){
+                                x++;
+                                mypro.value=x;
+                            }else{
+                                alert('Progress Filled');
+                            }
+                            onAutofill()
+                    }, 5000);
+                }
+            </script>
+        </div>
+    </div>
+    
+</body>
+</html>
